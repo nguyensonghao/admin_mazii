@@ -1,5 +1,5 @@
 <?php 
-	require public_path() . '\libs\parse\autoload.php';
+	require public_path() . '/libs/parse/autoload.php';
 	use Parse\ParseClient;
 	ParseClient::initialize( 'GnmiBlYGB7SXRQZjRTYrWFx2LgXccdjaTiRtDIos', 'bXT35xZbpMgmfqGX4ePjqABNSqjyJHwpGcLUkeb5', 'ziPBfVhB7DIM0T6CpiEmBBkXykKeIov5xkcnOoiO');
 	use Parse\ParseObject;

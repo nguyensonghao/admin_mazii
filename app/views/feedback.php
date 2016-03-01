@@ -3,6 +3,12 @@
 @extends('template/layout/main')
 
 @section('content')
+	@if (Session::has('alert'))
+	<div class="alert alert-info">
+		<strong>Thông báo!</strong> {{ Session::get('alert') }}
+	</div>
+	@endif
+
 	<div class="table-responsive">
 		<table class="table table-hover">
 			<thead>

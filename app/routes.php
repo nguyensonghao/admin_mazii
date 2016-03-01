@@ -110,6 +110,10 @@ Route::post('add-user', 'ManagerAcountController@addUser');
 
 //
 
-Route::controller('mynote', 'ManagerMyNoteController');
+Route::controller('feedback', 'ManagerFeedbackController');
 
-Route::get('list-note', 'ManagerReportController@get_list_mynote');
+Route::get('list-feedback', 'ManagerFeedbackController@get_list_feedback');
+
+Route::get('block-feedback/{id}', 'ManagerFeedbackController@block_feedback');
+
+Route::get('active-feedback/{id}', 'ManagerFeedbackController@active_feedback');
